@@ -131,7 +131,10 @@ React.useEffect(() => {
 }, [monitorWindowResize]);
 <!-- 这个配置项正常开发是不会变化的，但是利用这个更简洁的做了变化的处理 -->
 ```
-
+RcTable -> 
+-- 
+RcResizeObserver ->
+-- 使用ResizeObserver监听子元素的boundingClientRect
 
 ```
 ### 2.3 学习输出
