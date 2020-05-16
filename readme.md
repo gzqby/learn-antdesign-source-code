@@ -132,10 +132,17 @@ React.useEffect(() => {
 <!-- 这个配置项正常开发是不会变化的，但是利用这个更简洁的做了变化的处理 -->
 ```
 RcTable -> 
--- 
+-- jsx可以是指向有意义的字符串
+```
+const Com = 'div'
+<Com></Com>
+```
+-- React.memo(FunCom, areEqual),不影响state,context变更
+-- tbody第一列监听onResize
 RcResizeObserver ->
 -- 使用ResizeObserver监听子元素的boundingClientRect
-
+rcFieldForm ->
+-- 通过useForm形成form方法集合，SO 无论是传入的form还是自生产的都不能少useForm  
 ```
 ### 2.3 学习输出
 通过一步步的进行，我准备输出以下几项：  
